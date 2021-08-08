@@ -1,7 +1,7 @@
 import gym
 import numpy as np
 
-#use epsilon greedy, 1-epsilon select action with Q max and epsilon select other actions
+#use epsilon greedy, 1-epsilon select action with max Q and epsilon select other actions
 def eps_greedy(Q, s, eps=0.1):
     if np.random.uniform(0, 1) < eps:
         return np.random.randint(Q.shape[1])
@@ -39,7 +39,7 @@ def run_episodes(env, Q, num_episodes=100, to_print=False):
 #main Function
 if __name__ == '_main_':
     #use network environment
-    env = gym.make('offload')
+    env = gym.make('networkenv')
     #learning rate
     lr = 0.01
     #number of episodes
