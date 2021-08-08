@@ -44,6 +44,10 @@ if __name__ == '_main_':
     M=25
     #number of MD
     N=5
+    #bandwidth for both uplink and downlink between a user and an edge server is 150 MB
+    BW=150
+    #rate of the CPU of an edge sever is 9*10^8 cycle/s
+    CPU=900000000
     #learning rate
     lr = 0.01
     #number of episodes
