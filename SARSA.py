@@ -40,6 +40,10 @@ def run_episodes(env, Q, num_episodes=100, to_print=False):
 if __name__ == '_main_':
     #use network environment
     env = gym.make('networkenv')
+    #number of task 
+    M=25
+    #number of MD
+    N=5
     #learning rate
     lr = 0.01
     #number of episodes
